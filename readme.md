@@ -3,12 +3,12 @@
 Serverless Debugger is a web application designed to facilitate the debugging of serverless functions deployed on AWS Lambda and Google Cloud Platform (GCP). It offers features to list functions, invoke them, update their code, fetch logs, and add breakpoints for debugging purposes.
 
 ## Table of Contents
-
 - [Serverless Debugger](#serverless-debugger)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Prerequisites](#prerequisites)
   - [Project Structure](#project-structure)
+  - [Docker Image](#Docker-Image)
   - [Setup Instructions](#setup-instructions)
     - [Backend Setup](#backend-setup)
     - [Frontend Setup](#frontend-setup)
@@ -80,6 +80,12 @@ serverless-debugger/
 
 - **backend/**: Contains Go code for backend server, including handlers for HTTP requests (`handlers/`), log handlers (`log_handlers/`), and service implementations (`pkg/`).
 - **frontend/**: Contains React code for frontend UI, including components (`src/components/`), API functions (`src/api.js`), and main application files (`src/App.jsx`, `src/index.jsx`).
+
+## Docker Image
+
+```bash
+docker pull harshitnagpal29/serverless-debugger
+```
 
 ## Setup Instructions
 
